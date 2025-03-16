@@ -22,3 +22,8 @@ Omotenashi Passport is a dynamic NFT loyalty program that rewards tourists for e
 - **Blockchain**: Base Sepolia, Solidity (ERC-721)
 - **Web3 Integration**: ethers.js
 - **Design**: Custom SVG graphics with Japanese cultural elements
+
+
+Contract address - 0x5219015234d02F59B21A501fb52062f8bDF74E1A
+
+Contract found in src/utils
