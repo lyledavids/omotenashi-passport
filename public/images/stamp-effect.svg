@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#e94e38" stroke-width="20" stroke-dasharray="20,10"/>
+  <text x="256" y="256" font-family="Arial" font-size="40" fill="#e94e38" text-anchor="middle" dominant-baseline="middle">STAMP</text>
+  <path d="M256 120 L280 180 L345 180 L290 220 L310 280 L256 240 L202 280 L222 220 L167 180 L232 180 Z" fill="#e94e38"/>
+</svg>
+

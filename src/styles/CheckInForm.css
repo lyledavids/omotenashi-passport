@@ -1,0 +1,169 @@
+.check-in-form {
+    padding: 2rem;
+  }
+  
+  .check-in-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .check-in-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .form-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+  }
+  
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--washi);
+  }
+  
+  .check-in-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .check-in-button:hover {
+    background-color: #d44530;
+  }
+  
+  .check-in-button.checking {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+  
+  .info-section {
+    background-color: var(--washi);
+    border-radius: 8px;
+    padding: 2rem;
+    border-left: 4px solid var(--primary-color);
+  }
+  
+  .info-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .info-section ol {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .info-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .location-examples {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .location-examples h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .location-examples ul {
+    list-style: none;
+  }
+  
+  .location-examples li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .stamp-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+  }
+  
+  .stamp-effect {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: stampEffect 2s ease-out forwards;
+  }
+  
+  .stamp-effect img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @keyframes stampEffect {
+    0% {
+      transform: scale(0.5) rotate(-20deg);
+      opacity: 0;
+    }
+    20% {
+      transform: scale(1.2) rotate(0deg);
+      opacity: 1;
+    }
+    70% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 0;
+    }
+  }
+  
+  .empty-passports {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .check-in-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

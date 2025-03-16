@@ -1,0 +1,207 @@
+.redeem-perks {
+    padding: 2rem;
+  }
+  
+  .redeem-perks h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .perks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .passport-perks {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .passport-perks h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .perks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .perk-card {
+    background-color: var(--washi);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .perk-card.unlocked {
+    border-left: 4px solid var(--success-color);
+  }
+  
+  .perk-card.locked {
+    border-left: 4px solid var(--border-color);
+    opacity: 0.7;
+  }
+  
+  .perk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .perk-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .perk-details {
+    flex: 1;
+  }
+  
+  .perk-details h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .perk-details p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .perk-requirements {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stamps-needed {
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+  }
+  
+  .redeem-button {
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+  }
+  
+  .redeem-button:hover {
+    background-color: #219653;
+  }
+  
+  .qr-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .qr-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+  
+  .qr-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .qr-content p {
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+  }
+  
+  .redemption-code {
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .code-display {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    padding: 1rem;
+    border: 2px dashed var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  .redemption-details {
+    background-color: var(--washi);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .redemption-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .empty-perks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .perks-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
